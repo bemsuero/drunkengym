@@ -1,25 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Eczar');
+
 * {
     box-sizing: border-box;
-}
+    font-family: 'Eczar', serif;
 
-/* Create three unequal columns that floats next to each other */
+}
+.html {
+  text-align: center;
+  font-family: 'Eczar', serif;
+
+}
 .column {
     float: left;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    height: 900px;
+    text-align: center;
+    font-family: 'Eczar', serif;
+
 }
 
 .left, .right {
-  width: 25%;
+  width: 15%;
+  color: #ff0741;
+  text-align: center;
+  font-family: 'Eczar', serif;
+
 }
 
 .middle {
-  width: 50%;
+  width: 70%;
+color: #e5e6e8;
+text-align: center;
+font-family: 'Eczar', serif;
+
 }
 
-/* Clear floats after the columns */
 .row:after {
-    content: "";
+    content: "geez";
     display: table;
     clear: both;
+    font-family: 'Eczar', serif;
+
+}
+
+.p{
+text-align: center;
+font-family: 'Eczar', serif;
+
 }
