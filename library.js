@@ -13,7 +13,7 @@ pokemonPage = {
   // quilladin: "images/" + "quilladin.png",
   // lucario: "images/" + "lucario.png",
   // metagross: "images/" + "metagross.png",
-  // megnezone: "images/" + "megnezone.png"
+  // magnezone: "images/" + "megnezone.png"
 }
 
 var trainerWalia = document.getElementById("trainerWalia");
