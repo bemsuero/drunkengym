@@ -13,6 +13,7 @@
   position: absolute;
   transform-style: preserve-3d;
     transition-duration: 2s;
+    margin-left: 12%;
 }
 
 .carousel__cell {
@@ -75,4 +76,25 @@
 }
 .carousel__cell:nth-child(4) {
   transform: rotateY(270deg) translateZ(99px);
+}
+
+.arrow {
+  text-align: center;
+  margin-left: 21%;
+  background-color: red;
+  transition-duration: 1s;
+}
+
+.arrow:hover {
+  text-align: center;
+  background-color: red;
+  font-size: 110%;
+  transition-duration: 1s;
+
+}
+
+.arrow:focus {
+  text-align: center;
+  margin-left: 17%;
+  background-color: red;
 }
