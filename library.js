@@ -5,6 +5,15 @@ pokemonPage = {
   trainerBen: "images/" + "trainerBen.png",
   trainerJerry: "images/" + "trainerJerry.png",
   trainerX: "images/" + "trainerStrewbsMissing.png"
+  // haunter: "images/" + "haunter.png",
+  // giratina: "images/" + "giratina.png",
+  // marshadow: "images/" + "marshadow.png",
+  // sceptile: "images/" + "sceptile.png",
+  // serperior: "images/" + "serperior.png",
+  // quilladin: "images/" + "quilladin.png",
+  // lucario: "images/" + "lucario.png",
+  // metagross: "images/" + "metagross.png",
+  // megnezone: "images/" + "megnezone.png"
 }
 
 var trainerWalia = document.getElementById("trainerWalia");
@@ -19,9 +28,10 @@ trainerJerry.src = pokemonPage.trainerJerry;
 var trainerX = document.getElementById("trainerX");
 trainerX.src = pokemonPage.trainerX;
 
-pokemonGet = [];
-totalPokemon = 0;
-
+function loadImage(pokemon) {
+var pokemonImage = document.getElementById("pokemonImage");
+pokemonImage.src = "images/" + pokemon + ".png";
+  }
 // owner = {
 //     name: trainerName,
 //     ownedPokemon: pokemonGet,
@@ -31,6 +41,8 @@ totalPokemon = 0;
 //       alert(JSON.stringify(pokemonGet[arrayContents]));
 //     }
 // }
+pokemonGet = [];
+totalPokemon = 0;
 
 function retPokemon () {
 pokemon = {
@@ -66,34 +78,30 @@ function loadPokemon(pokemon) {
     if (this.readyState == 4 && this.status == 200) {
       myObj = JSON.parse(this.responseText);
       document.getElementById("pokeName").innerHTML = myObj.name;
-      document.getElementById("pokeImage").src = myObj.sprites.front_default;
-      document.getElementById("pokeNumber").innerHTML = "Num " + myObj.id;
       document.getElementById("pokeType").innerHTML = myObj.types[0].type.name;
       // document.getElementById("pokeType2").innerHTML = myObj.types[1].type.name;
       document.getElementById("atk").innerHTML = myObj.stats[4].base_stat;
       document.getElementById("def").innerHTML = myObj.stats[3].base_stat;
-      document.getElementById("abilityBox").innerHTML = "This pokemon's HP is " + myObj.stats[5].base_stat + " and it's abilitiy is " + myObj.abilities[0].ability.name + ". ";
-      // + "Abilities are " + myObj.abilities[0].ability.name + " and " + myObj.abilities[1].ability.name + ". ";
+      document.getElementById("hp").innerHTML = "This pokemon's HP is " + myObj.stats[5].base_stat
 
 if (myObj.types[0].slot == 2) {
 document.getElementById("pokeType2").innerHTML = myObj.types[1].type.name;
-responsiveVoice.cancel();
+// responsiveVoice.cancel();
   retPokemon2();
-      responsiveVoice.speak(myObj.name);
-      responsiveVoice.speak(myObj.types[0].type.name + "type");
-      responsiveVoice.speak("Also" + myObj.types[1].type.name + "type.");
-        responsiveVoice.speak(document.getElementById("abilityBox").innerHTML);
+      // responsiveVoice.speak(myObj.name);
+      // responsiveVoice.speak(myObj.types[0].type.name + "type");
+      // responsiveVoice.speak("Also" + myObj.types[1].type.name + "type.");
+      //   responsiveVoice.speak(document.getElementById("abilityBox").innerHTML);
 }
   else {
     document.getElementById("pokeType2").innerHTML = "Pokemon Type";
-    responsiveVoice.cancel();
+    // responsiveVoice.cancel();
     retPokemon();
-        responsiveVoice.speak(myObj.name);
-        pokeType: responsiveVoice.speak(myObj.types[0].type.name + "type");
-          responsiveVoice.speak(document.getElementById("abilityBox").innerHTML);
+        // responsiveVoice.speak(myObj.name);
+        // pokeType: responsiveVoice.speak(myObj.types[0].type.name + "type");
+        //   responsiveVoice.speak(document.getElementById("abilityBox").innerHTML);
   }
-    // retPokemon();
-    addPokemonToList();
+  loadImage();
         }
   };
   xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/" + pokemon, true);
