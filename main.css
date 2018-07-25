@@ -2,7 +2,9 @@
   width: 320px;
   height: 551px;
   position: relative;
-  perspective: 1000px;
+  perspective: 100000px;
+  margin: 10% 10%;
+    transition-duration: 2s;
 }
 
 .carousel {
@@ -10,6 +12,7 @@
   height: 100%;
   position: absolute;
   transform-style: preserve-3d;
+    transition-duration: 2s;
 }
 
 .carousel__cell {
@@ -18,20 +21,58 @@
   height: 531px;
   left: 10px;
   top: 10px;
+  line-height: 116px;
+  font-size: 80px;
+  text-align: center;
+  transition-duration: 2s;
 }
+/* Walia */
+.carousel__cell:nth-child(1) {
+  background-image: url("images/waliaBackground.gif");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 531px;
+}
+/* Jerry */
+.carousel__cell:nth-child(2) {
+  background-image: url("images/jerryBackground.gif");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 531px;
+}
+/* Ben */
+.carousel__cell:nth-child(3) {
+  background-image: url("images/benBackground.gif");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 531px;
+}
+/* X */
+.carousel__cell:nth-child(4) {
+  background-image: url("images/xBackground.gif");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 531px;
+}
+
 
 .carousel__cell:nth-child(1) {
-  transform: rotateY(  0deg);
+  transform: rotateY(  0deg) translateZ(99px);
 }
-
 .carousel__cell:nth-child(2) {
-  transform: rotateY( 90deg);
+  transform: rotateY( 90deg) translateZ(99px);
 }
-
 .carousel__cell:nth-child(3) {
-  transform: rotateY( 180deg);
+  transform: rotateY( 180deg) translateZ(99px);
 }
-
-.carousel__cell:nth-child(3) {
-  transform: rotateY( 270deg);
+.carousel__cell:nth-child(4) {
+  transform: rotateY(270deg) translateZ(99px);
 }
