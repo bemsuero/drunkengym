@@ -1,7 +1,9 @@
+//pokemon pull
+
 pokemonPage = {
   trainerWalia: "images/" + "trainerWalia.png",
   trainerBen: "images/" + "trainerBen.png",
-  trainerJerry: "images/" + "trainerJerry.png"
+  trainerJerry: "images/" + "trainerJerry.png",
   trainerX: "images/" + "trainerStrewbsMissing.png"
 }
 
@@ -20,15 +22,15 @@ trainerX.src = pokemonPage.trainerX;
 pokemonGet = [];
 totalPokemon = 0;
 
-owner = {
-    name: trainerName,
-    ownedPokemon: pokemonGet,
-    function() {
-      var arrayContents = 0;
-      for (arrayContents = 0; arrayContents < pokemonGet.length; arrayContents++)
-      alert(JSON.stringify(pokemonGet[arrayContents]));
-    }
-}
+// owner = {
+//     name: trainerName,
+//     ownedPokemon: pokemonGet,
+//     function() {
+//       var arrayContents = 0;
+//       for (arrayContents = 0; arrayContents < pokemonGet.length; arrayContents++)
+//       alert(JSON.stringify(pokemonGet[arrayContents]));
+//     }
+// }
 
 function retPokemon () {
 pokemon = {
@@ -104,3 +106,25 @@ function adopt() {
     alert("You have " + totalPokemon + " pokemon")
     checkList();
 }
+
+//carsousel workings
+var carousel = document.querySelector('.carousel');
+var cellCount = 4;
+var selectedIndex = 0;
+
+function rotateCarousel() {
+  var angle = selectedIndex / cellCount * -360;
+  carousel.style.transform = 'translateZ(-99px) rotateY(' + angle + 'deg)';
+}
+
+var prevButton = document.querySelector('.previous-button');
+prevButton.addEventListener( 'click', function() {
+  selectedIndex--;
+  rotateCarousel();
+});
+
+var nextButton = document.querySelector('.next-button');
+nextButton.addEventListener( 'click', function() {
+  selectedIndex++;
+  rotateCarousel();
+});
