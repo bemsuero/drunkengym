@@ -1,9 +1,21 @@
 pokemonPage = {
-  trainerBen: "images/" + "trainerBen.png",
-  trainerJerry: "images/" + "trainerJerry.png",
   trainerWalia: "images/" + "trainerWalia.png",
+  trainerBen: "images/" + "trainerBen.png",
+  trainerJerry: "images/" + "trainerJerry.png"
+  trainerX: "images/" + "trainerStrewbsMissing.png"
 }
 
+var trainerWalia = document.getElementById("trainerWalia");
+trainerWalia.src = pokemonPage.trainerWalia;
+
+var trainerBen = document.getElementById("trainerBen");
+trainerBen.src = pokemonPage.trainerBen;
+
+var trainerJerry = document.getElementById("trainerJerry");
+trainerJerry.src = pokemonPage.trainerJerry;
+
+var trainerX = document.getElementById("trainerX");
+trainerX.src = pokemonPage.trainerX;
 
 pokemonGet = [];
 totalPokemon = 0;
