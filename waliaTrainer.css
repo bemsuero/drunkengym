@@ -1,0 +1,58 @@
+h1 {
+	text-align: center;
+}
+
+.container {
+	width:90%;
+	margin:auto;
+}
+
+.invisible img {
+	display: none;
+}
+
+.grid-horizontal {
+	display: grid;
+  	grid-template-columns: auto auto auto;
+  	position: fixed;
+  	bottom: 5%;
+  	left: 10%;
+}
+
+.grid-horizontal img {
+	width: 60%;
+}
+
+.grid-vertical {
+	display: grid;
+	grid-auto-columns: auto;
+  	margin-top: 15%;
+}
+
+.grid-item {
+  	animation: MoveUpDown 1s linear infinite;
+ 	position: relative;
+ /*	width: 60%;*/
+ 	left: 15%;
+}
+
+/*.grid-item img {
+	width: 10%;
+}*/
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 3px;
+  }
+}
+
+.trainer {
+  position: absolute;
+  bottom: 3%;
+  left: 0px;
+  cursor: pointer; 
+  width:20%;
+}
