@@ -4,38 +4,35 @@
 	<title>Gym</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="waliaTrainer.css">
-	<link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
 
 	<div class="container">
-		<h1 id="trainerName">Walia</h1>
-
-		<div class="grid">
+		<h1 id="trainerName">Trainer: Walia</h1>
 		<img class="trainer" src="images/TrainerWalia.png">
-		<div class="pokeballs">
+		<div class="grid-vertical">
 			<div class="pokeball"><img src="images/trainerPokeball.png" onclick="loadPokemon('sceptile')"></div>
 			<div class="pokeball"><img src="images/trainerPokeball.png" onclick="loadPokemon('serperior')"></div>
 			<div class="pokeball"><img src="images/trainerPokeball.png" onclick="loadPokemon('quilladin')"></div>
 		</div>
 
-			<div id="description" class="box">
-				<p>This this this this this this tshi sibduabsdiah abb</p>
-				<p id="hp">HP: 90</p>
-				<p id="atk">ATK: 90</p>
-				<p id="def">DEF:90</p>
+		<div class="grid-pokemon invisible">
+			<div id="description" class="box invisible">
+				<p id="pokemon-bio"></p>
+				<p id="hp" class="stats"><i class="fas fa-heartbeat"></i> </p>
+				<p id="def" class="stats"><i class="fas fa-shield-alt"></i> </p>
+				<p id="atk" class="stats"><i class="fas fa-hand-rock"></i> </p>
 			</div>
 
-			<img id="pokemonImage">
+			<img id="pokemon" class= "invisible" src="">
 		</div>
-
-		<!-- <div class="grid-horizontal invisible">
-			<div class="grid-item"><img src="images/trainerPokeball.png" onclick="squirtleClick()"></div>
-			<div class="grid-item"><img src="images/trainerPokeball.png" onclick="venusaurClick()"></div>
-			<div class="grid-item"><img src="images/trainerPokeball.png" onclick="pikachuClick()"></div>
-		</div> -->
+	
+		<div class="grid-horizontal">
+			<div class="pokeball-horizontal"><img src="images/trainerPokeball.png" onclick="loadPokemon('sceptile')"></div>
+			<div class="pokeball-horizontal"><img src="images/trainerPokeball.png" onclick="loadPokemon('serperior')"></div>
+			<div class="pokeball-horizontal"><img src="images/trainerPokeball.png" onclick="loadPokemon('quilladin')"></div>
+		</div>
 	</div>
 </body>
-<script src="library.js">
-</script>
 </html>
