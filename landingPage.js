@@ -50,10 +50,12 @@ var prevButton = document.querySelector('.previous-button');
 prevButton.addEventListener( 'click', function() {
   selectedIndex--;
   rotateCarousel();
+  checkBio();
 });
 
 var nextButton = document.querySelector('.next-button');
 nextButton.addEventListener( 'click', function() {
   selectedIndex++;
   rotateCarousel();
+  checkBio();
 });
