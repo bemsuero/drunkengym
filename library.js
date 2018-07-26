@@ -129,10 +129,10 @@ function loadPokemon(pokemon) {
       appear();
     }
   };
-  xhttp.open("GET", "https://raw.githubusercontent.com/awalia1/Pokedex/master/txt-files/squirtle.txt", true);
+  xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/" + pokemon, true);
   xhttp.send();
 }
-
+// "https://raw.githubusercontent.com/awalia1/Pokedex/master/txt-files/squirtle.txt"
 // "https://pokeapi.co/api/v2/pokemon/" + pokemon,
 
 function adopt() {
