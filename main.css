@@ -436,7 +436,28 @@ img {
 }
 }
 
-@media screen and (min-width: 900px) and (max-width: 2066px) {
+@media screen and (min-width: 900px) and (max-width: 1366px) {
+  .personalStory {
+
+  }
+
+  #personalStory {
+
+  }
+
+  .teamStory {
+
+  }
+
+  #teamStory {
+
+  }
+  html {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1367px) and (max-width: 2066px) {
   .personalStory {
 
   }
