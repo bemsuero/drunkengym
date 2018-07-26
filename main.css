@@ -1,10 +1,15 @@
+html {
+    font-family: 'Eczar', serif;
+}
+
 .scene {
   width: 320px;
   height: 551px;
   position: relative;
   perspective: 100000px;
-  margin: 10% 10%;
+  margin: 10% 12%;
     transition-duration: 2s;
+      margin-bottom: -1%;
 }
 
 .carousel {
@@ -80,7 +85,7 @@
 
 .arrow {
   text-align: center;
-  margin-left: 21%;
+  margin-left: 23%;
   background-color: red;
   transition-duration: 1s;
 }
@@ -95,6 +100,12 @@
 
 .arrow:focus {
   text-align: center;
-  margin-left: 17%;
   background-color: red;
+}
+
+.header {
+  font-family: 'Eczar', serif;
+  background-color: #ff0741;
+  text-align: center;
+  margin-bottom: -5%;
 }
