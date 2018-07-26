@@ -1,3 +1,5 @@
+// index html
+
 <!DOCTYPE html>
 <html onload="landingPage()">
 <!-- mycss -->
@@ -21,27 +23,24 @@
     <div class="row">
       <div class="column header">
     <h2 id="landingPage">Bam Power Gym!</h2>
-    <p>One Mission! To get a +A</p>
+    <p>One Mission! Stealing ALL Pokemon.</p>
     </div>
   </div>
   </div>
-  <div class="container">
+  <div id="teamInfo" class="container">
   <div class="row">
-    <div class="column">
-      <!-- Team Story -->
+    <div class="column teamStory">
+      <p id="teamStory">The wonderful story of a trio of Ne'er-do-wells. Forest dwelling, ghostly and strong as steel personalities.</p>
     </div>
-    <div class="row"></div>
-    <div class="row"></div>
-    <div class="row"></div>
     <div class="column">
 
         <section id="carousel">
           <div class="scene">
             <div class="carousel">
-              <div class="carousel__cell"><img id="trainerWalia"></div>
-              <div class="carousel__cell"><img id="trainerJerry"></div>
-              <div class="carousel__cell"><img id="trainerBen"></div>
-              <div class="carousel__cell"><img id="trainerX"></div>
+              <div class="carousel__cell"><a href="waliaTrainer.html"><img id="trainerWalia"></a></div>
+              <div class="carousel__cell"><a href="jerryTrainer.html"><img id="trainerJerry"></a> </div>
+              <div class="carousel__cell"><a href="benTrainer.html"><img id="trainerBen"></a> </div>
+              <div class="carousel__cell"><img onclick="mysteryTrainer()" id="trainerX"> <a href="#"></a> </div>
             </div>
           </div>
         </section>
@@ -50,12 +49,8 @@
         <button class="arrow next-button"><i class="fas fa-arrow-right"></i></button>
       </div>
       </div>
-      <div class="column">
-        <!-- personal story -->
-        <img id="pokemonImage">
-        <div class="row"></div>
-        <div class="row"></div>
-        <div class="row"></div>
+      <div class="column personalStory">
+        <p id="personalStory"></p>
       </div>
     </div>
   </div>
@@ -64,7 +59,6 @@
 <script src="library.js">
 </script>
 <script src="landingPage.js">
-
 </script>
 
 </html>

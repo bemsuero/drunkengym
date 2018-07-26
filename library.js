@@ -47,7 +47,7 @@ function loadPokemon(pokemon) {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       myObj = JSON.parse(this.responseText);
-      // document.getElementById("pokeName").innerHTML = myObj.name;
+      document.getElementById("trainerName").innerHTML = myObj.name;
       // document.getElementById("pokeType").innerHTML = myObj.types[0].type.name;
       // document.getElementById("pokeType2").innerHTML = myObj.types[1].type.name;
       document.getElementById("atk").innerHTML = myObj.stats[4].base_stat;
