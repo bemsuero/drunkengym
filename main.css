@@ -46,7 +46,13 @@ html {
         font-weight: bold;
           font-size: 1.1em;
 }
-
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    border-radius: 9px;
+}
 
 #teamInfo {
   margin: 2% -1%;
@@ -60,6 +66,7 @@ html {
     transition-duration: 2s;
       margin-bottom: 4%;
       margin-left: -10%;
+      border-radius: 6
 }
 
 .carousel {
