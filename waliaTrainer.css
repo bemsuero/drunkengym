@@ -1,6 +1,4 @@
 
-
-
 body {
 	background: url('images/grassBackground.jpg');
 	color: white;
@@ -10,6 +8,9 @@ h1 {
 	text-align: center;
 	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
+
+h1:first-letter {
+  text-transform: capitalize; }
 
 #trainerName{
 	font-size: 50px;
@@ -88,6 +89,7 @@ h1 {
 }
 
 .box {
+		margin-top: 3%;
 width: 475px;
 height: 475px;
 overflow-wrap: break-word;

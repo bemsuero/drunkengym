@@ -8,6 +8,9 @@
 	  text-shadow: 4px 4px 10px black;
 	}
 
+	h1:first-letter {
+  text-transform: capitalize; }
+
 	#trainerName {
 	  font-size: 50px;
 	}
@@ -85,6 +88,7 @@
 	}
 
 	.box {
+			margin-top: 3%;
 	  width: 475px;
 	  height: 475px;
 	  overflow-wrap: break-word;
