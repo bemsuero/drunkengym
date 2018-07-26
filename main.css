@@ -2,14 +2,32 @@ html {
     font-family: 'Eczar', serif;
 }
 
+#personalStory {
+  border: 2px black solid;
+  max-width: 25%;
+  margin-right: -4%;
+  padding-top: 9%;
+}
+
+#teamStory {
+  border: 2px black solid;
+  max-width: 25%;
+  margin-left: 4%;
+  padding-top: 9%;
+}
+
+#teamInfo {
+  margin: 6% -1%;
+}
+
 .scene {
   width: 320px;
   height: 551px;
   position: relative;
-  perspective: 100000px;
-  margin: 10% 12%;
+  perspective: 1000000000px;
     transition-duration: 2s;
       margin-bottom: -1%;
+      margin-left: 12%;
 }
 
 .carousel {
@@ -18,7 +36,7 @@ html {
   position: absolute;
   transform-style: preserve-3d;
     transition-duration: 2s;
-    margin-left: 12%;
+    margin-left: 15%;
 }
 
 .carousel__cell {
@@ -71,16 +89,16 @@ html {
 
 
 .carousel__cell:nth-child(1) {
-  transform: rotateY(  0deg) translateZ(99px);
+  transform: rotateY(  0deg) translateZ(160px);
 }
 .carousel__cell:nth-child(2) {
-  transform: rotateY( 90deg) translateZ(99px);
+  transform: rotateY( 90deg) translateZ(160px);
 }
 .carousel__cell:nth-child(3) {
-  transform: rotateY( 180deg) translateZ(99px);
+  transform: rotateY( 180deg) translateZ(160px);
 }
 .carousel__cell:nth-child(4) {
-  transform: rotateY(270deg) translateZ(99px);
+  transform: rotateY(270deg) translateZ(160px);
 }
 
 .arrow {

@@ -1,33 +1,3 @@
-//pokemon pull
-
-pokemonPage = {
-  trainerWalia: "images/" + "trainerWalia.png",
-  trainerBen: "images/" + "trainerBen.png",
-  trainerJerry: "images/" + "trainerJerry.png",
-  trainerX: "images/" + "trainerStrewbsMissing.png"
-  // haunter: "images/" + "haunter.png",
-  // giratina: "images/" + "giratina.png",
-  // marshadow: "images/" + "marshadow.png",
-  // sceptile: "images/" + "sceptile.png",
-  // serperior: "images/" + "serperior.png",
-  // quilladin: "images/" + "quilladin.png",
-  // lucario: "images/" + "lucario.png",
-  // metagross: "images/" + "metagross.png",
-  // magnezone: "images/" + "megnezone.png"
-}
-
-var trainerWalia = document.getElementById("trainerWalia");
-trainerWalia.src = pokemonPage.trainerWalia;
-
-var trainerBen = document.getElementById("trainerBen");
-trainerBen.src = pokemonPage.trainerBen;
-
-var trainerJerry = document.getElementById("trainerJerry");
-trainerJerry.src = pokemonPage.trainerJerry;
-
-var trainerX = document.getElementById("trainerX");
-trainerX.src = pokemonPage.trainerX;
-
 function loadImage(pokemon) {
 var pokemonImage = document.getElementById("pokemonImage");
 pokemonImage.src = "images/" + pokemon + ".png";
@@ -77,31 +47,31 @@ function loadPokemon(pokemon) {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       myObj = JSON.parse(this.responseText);
-      document.getElementById("pokeName").innerHTML = myObj.name;
-      document.getElementById("pokeType").innerHTML = myObj.types[0].type.name;
+      document.getElementById("trainerName").innerHTML = myObj.name;
+      // document.getElementById("pokeType").innerHTML = myObj.types[0].type.name;
       // document.getElementById("pokeType2").innerHTML = myObj.types[1].type.name;
       document.getElementById("atk").innerHTML = myObj.stats[4].base_stat;
       document.getElementById("def").innerHTML = myObj.stats[3].base_stat;
       document.getElementById("hp").innerHTML = "This pokemon's HP is " + myObj.stats[5].base_stat
 
-if (myObj.types[0].slot == 2) {
-document.getElementById("pokeType2").innerHTML = myObj.types[1].type.name;
-// responsiveVoice.cancel();
-  retPokemon2();
-      // responsiveVoice.speak(myObj.name);
-      // responsiveVoice.speak(myObj.types[0].type.name + "type");
-      // responsiveVoice.speak("Also" + myObj.types[1].type.name + "type.");
-      //   responsiveVoice.speak(document.getElementById("abilityBox").innerHTML);
-}
-  else {
-    document.getElementById("pokeType2").innerHTML = "Pokemon Type";
-    // responsiveVoice.cancel();
-    retPokemon();
+// if (myObj.types[0].slot == 2) {
+// document.getElementById("pokeType2").innerHTML = myObj.types[1].type.name;
+// // responsiveVoice.cancel();
+//   retPokemon2();
+//       // responsiveVoice.speak(myObj.name);
+//       // responsiveVoice.speak(myObj.types[0].type.name + "type");
+//       // responsiveVoice.speak("Also" + myObj.types[1].type.name + "type.");
+//       //   responsiveVoice.speak(document.getElementById("abilityBox").innerHTML);
+// }
+//   else {
+//     document.getElementById("pokeType2").innerHTML = "Pokemon Type";
+//     // responsiveVoice.cancel();
+//     retPokemon();
         // responsiveVoice.speak(myObj.name);
         // pokeType: responsiveVoice.speak(myObj.types[0].type.name + "type");
         //   responsiveVoice.speak(document.getElementById("abilityBox").innerHTML);
-  }
-  loadImage();
+  // }
+  loadImage(pokemon);
         }
   };
   xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/" + pokemon, true);
@@ -114,25 +84,3 @@ function adopt() {
     alert("You have " + totalPokemon + " pokemon")
     checkList();
 }
-
-//carsousel workings
-var carousel = document.querySelector('.carousel');
-var cellCount = 4;
-var selectedIndex = 0;
-
-function rotateCarousel() {
-  var angle = selectedIndex / cellCount * -360;
-  carousel.style.transform = 'translateZ(-99px) rotateY(' + angle + 'deg)';
-}
-
-var prevButton = document.querySelector('.previous-button');
-prevButton.addEventListener( 'click', function() {
-  selectedIndex--;
-  rotateCarousel();
-});
-
-var nextButton = document.querySelector('.next-button');
-nextButton.addEventListener( 'click', function() {
-  selectedIndex++;
-  rotateCarousel();
-});

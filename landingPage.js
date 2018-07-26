@@ -39,41 +39,101 @@ trainerX.src = pokemonPage.trainerX;
 // //carsousel workings
 var carousel = document.querySelector('.carousel');
 var cellCount = 4;
-var selectedIndex = 0;
+selectedIndex = 0;
 
 function rotateCarousel() {
   var angle = selectedIndex / cellCount * -360;
-  carousel.style.transform = 'translateZ(-99px) rotateY(' + angle + 'deg)';
+  carousel.style.transform = 'translateZ(-160px) rotateY(' + angle + 'deg)';
 };
 
 var prevButton = document.querySelector('.previous-button');
 prevButton.addEventListener( 'click', function() {
   selectedIndex--;
   rotateCarousel();
+  checkBio();
 });
 
 var nextButton = document.querySelector('.next-button');
 nextButton.addEventListener( 'click', function() {
   selectedIndex++;
   rotateCarousel();
+  checkBio();
 });
 
-
-
-
-
-
 var personalStory = document.getElementById("personalStory");
+personalStory.innerHTML = trainerBios.bioWalia;
+
+function checkBio() {
+  if (selectedIndex == -12) {
+    personalStory.innerHTML = trainerBios.bioWalia;
+  }
+  if (selectedIndex == -11) {
+    personalStory.innerHTML = trainerBios.bioJerry;
+  }
+   if (selectedIndex == -10) {
+    personalStory.innerHTML = trainerBios.bioBemilton;
+  }
+   if (selectedIndex == -9) {
+    personalStory.innerHTML = "???";
+  }
+  if (selectedIndex == -8) {
+    personalStory.innerHTML = trainerBios.bioWalia;
+  }
+  if (selectedIndex == -7) {
+    personalStory.innerHTML = trainerBios.bioJerry;
+  }
+   if (selectedIndex == -6) {
+    personalStory.innerHTML = trainerBios.bioBemilton;
+  }
+   if (selectedIndex == -5) {
+    personalStory.innerHTML = "???";
+  }
+  if (selectedIndex == -4) {
+    personalStory.innerHTML = trainerBios.bioWalia;
+  }
+  if (selectedIndex == -3) {
+    personalStory.innerHTML = trainerBios.bioJerry;
+  }
+   if (selectedIndex == -2) {
+    personalStory.innerHTML = trainerBios.bioBemilton;
+  }
+   if (selectedIndex == -1) {
+    personalStory.innerHTML = "???";
+  }
 if (selectedIndex == 0) {
   personalStory.innerHTML = trainerBios.bioWalia;
 }
 if (selectedIndex == 1) {
   personalStory.innerHTML = trainerBios.bioJerry;
 }
-if (selectedIndex == 2) {
+ if (selectedIndex == 2) {
   personalStory.innerHTML = trainerBios.bioBemilton;
 }
-if (selectedIndex == 3) {
+ if (selectedIndex == 3) {
+  personalStory.innerHTML = "???";
+}
+if (selectedIndex == 4) {
+  personalStory.innerHTML = trainerBios.bioWalia;
+}
+if (selectedIndex == 5) {
+  personalStory.innerHTML = trainerBios.bioJerry;
+}
+ if (selectedIndex == 6) {
+  personalStory.innerHTML = trainerBios.bioBemilton;
+}
+ if (selectedIndex == 7) {
+  personalStory.innerHTML = "???";
+}
+if (selectedIndex == 8) {
+  personalStory.innerHTML = trainerBios.bioWalia;
+}
+if (selectedIndex == 9) {
+  personalStory.innerHTML = trainerBios.bioJerry;
+}
+ if (selectedIndex == 10) {
+  personalStory.innerHTML = trainerBios.bioBemilton;
+}
+ if (selectedIndex == 11) {
   personalStory.innerHTML = "???";
 }
 }
