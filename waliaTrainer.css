@@ -76,22 +76,20 @@ h1 {
 	width: 65%;
 	position: relative;
 	left: 32%;
-	bottom: 650px;
+	bottom: 500px;
 }
 
-#pokemon {
+#pokemonImage {
 	width: 100%;
-	bottom: 50px;
 }
 
 .box {
-    width: 176%;
-    height: 57%;
-    background-color: rgba(255, 255, 255, 0.4);
-    overflow-wrap: break-word;
-    padding: 32px;
-    margin-top: 127%;
-    text-align: center;
+	width: 475px;
+	height: 475px;
+	background-color: rgba(255, 255, 255, 0.8);
+	overflow-wrap: break-word;
+	padding: 12px;
+	text-align: center;
 }
 
 #pokemonImage {
