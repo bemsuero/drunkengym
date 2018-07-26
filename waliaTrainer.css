@@ -1,3 +1,6 @@
+
+
+
 body {
 	background: url('images/grassBackground.jpg');
 	color: white;
@@ -5,6 +8,7 @@ body {
 
 h1 {
 	text-align: center;
+	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
 
 #trainerName{
@@ -84,26 +88,20 @@ h1 {
 }
 
 .box {
-	width: 475px;
-	height: 475px;
-	overflow-wrap: break-word;
-	padding: 12px;
-	text-align: center;
-	border: 2px #C4E538 solid;
- background-color: #009432;
- color: white;
- border-radius: 8px;
-	 font-family: 'Eczar', serif;
-		 box-shadow: 5px 5px black;
-		 opacity: 0.8;
-			 font-weight: bold;
-				 font-size: 1.1em;
-}
-
-#pokemonImage {
-	    width: 167%;
-	    height: 27%;
-	    margin-top: 178%;
+width: 475px;
+height: 475px;
+overflow-wrap: break-word;
+padding: 12px;
+text-align: center;
+border: 2px #C4E538 solid;
+background-color: #009432;
+color: white;
+border-radius: 8px;
+font-family: 'Eczar', serif;
+box-shadow: 5px 5px black;
+opacity: 0.8;
+font-weight: bold;
+font-size: 1.1em;
 }
 
 .trainer {
@@ -157,6 +155,7 @@ h1 {
   		height: 250px;
   		margin-left: -19px;
 	 	margin-top: 5px;
+
 	}
 
 	#trainerName {
