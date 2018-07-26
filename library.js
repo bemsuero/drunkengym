@@ -1,8 +1,8 @@
 pokeBios = {
   bioHaunter: "On moonless nights, Haunter searches for someone to curse, so it’s best not to go out walking around.",
   bioGiratina: "It was banished for its violence. It silently gazed upon the old world from the Distortion World.",
-  bioMarshadow: "It sinks into the shadows of people and Pokémon, where it can understand their feelings and copy their capabilities.",
-  bioSceptile: "In the jungle, its power is without equal. This POKéMON carefully grows trees and plants. It regulates its body temperature by basking in sunlight.",
+  bioMarshadow: "It sinks into the shadows of people and pokemon, where it can understand their feelings and copy their capabilities.",
+  bioSceptile: "In the jungle, its power is without equal. This pokemon carefully grows trees and plants. It regulates its body temperature by basking in sunlight.",
   bioSerperior: "It only gives its all against strong opponents who are not fazed by the glare from Serperior’s noble eyes.",
   bioQuilladin: "When it takes a defensive posture with its fists guarding its face, it could withstand a bomb blast.",
   bioLucario: "It concentrates its mental energy and fires off mysterious waves called auras, which can crush boulders of large size to dust.",
