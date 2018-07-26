@@ -1,6 +1,6 @@
 pokeBios = {
   bioHaunter: "On moonless nights, Haunter searches for someone to curse, so it’s best not to go out walking around.",
-  bioGiratina: "It was banished for its violence. It silently gazed upon the old world from the Distortion World.",
+  bioGengar: "It was banished for its violence. It silently gazed upon the old world from the Distortion World.",
   bioMarshadow: "It sinks into the shadows of people and pokemon, where it can understand their feelings and copy their capabilities.",
   bioSceptile: "In the jungle, its power is without equal. This pokemon carefully grows trees and plants. It regulates its body temperature by basking in sunlight.",
   bioSerperior: "It only gives its all against strong opponents who are not fazed by the glare from Serperior’s noble eyes.",
@@ -18,8 +18,8 @@ function getBio(pokemon) {
   if (myObj.name == "haunter") {
     pokeBio.innerHTML = pokeBios.bioHaunter;
   }
-  if (myObj.name == "giratina") {
-    pokeBio.innerHTML = pokeBios.bioGiratina;
+  if (myObj.name == "gengar") {
+    pokeBio.innerHTML = pokeBios.bioGengar;
   }
   if (myObj.name == "marshadow") {
     pokeBio.innerHTML = pokeBios.bioMarshadow;
