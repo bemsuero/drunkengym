@@ -87,10 +87,18 @@
 	.box {
 	  width: 475px;
 	  height: 475px;
-	  background-color: rgba(255, 255, 255, 0.8);
 	  overflow-wrap: break-word;
 	  padding: 12px;
 	  text-align: center;
+		border: 2px #EA2027 solid;
+		background-color: #006266;
+		color: white;
+		border-radius: 8px;
+		font-family: 'Eczar', serif;
+		box-shadow: 5px 5px black;
+		opacity: 0.8;
+		font-weight: bold;
+		font-size: 1.1em;
 	}
 
 	.trainer {
