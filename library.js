@@ -1,3 +1,52 @@
+pokeBios = {
+    bioHaunter:"On moonless nights, Haunter searches for someone to curse, so it’s best not to go out walking around.",
+    bioGiratina:"It was banished for its violence. It silently gazed upon the old world from the Distortion World.",
+    bioMarshadow:"It sinks into the shadows of people and Pokémon, where it can understand their feelings and copy their capabilities.",
+    bioSceptile:"In the jungle, its power is without equal. This POKéMON carefully grows trees and plants. It regulates its body temperature by basking in sunlight.",
+    bioSerperior:"It only gives its all against strong opponents who are not fazed by the glare from Serperior’s noble eyes.",
+    bioQuilladin:"When it takes a defensive posture with its fists guarding its face, it could withstand a bomb blast.",
+    bioLucario:"It concentrates its mental energy and fires off mysterious waves called auras, which can crush boulders of large size to dust.",
+    bioMetagross:"It analyzes its opponents with more accuracy than a supercomputer, which enables it to calmly back them into a corner.",
+    bioMagnezone:"It uses radar to monitor its territory. Intruders are quickly disposed of with a hyper beam."
+}
+
+var pokeBio = document.getElementById("pokemon-bio");
+// pokeBio.innerHTML = pokeBios.pokemon;
+
+
+function getBio(pokemon) {
+if (myObj.name == "haunter" ){
+  pokeBio.innerHTML = pokeBios.bioHaunter;
+}
+if (myObj.name == "giratina" ){
+  pokeBio.innerHTML = pokeBios.bioGiratina;
+}
+if (myObj.name == "marshadow" ){
+  pokeBio.innerHTML = pokeBios.bioMarshadow;
+}
+if (myObj.name == "sceptile" ){
+  pokeBio.innerHTML = pokeBios.bioSceptile;
+}
+if (myObj.name == "serperior" ){
+  pokeBio.innerHTML = pokeBios.bioSerperior;
+}
+if (myObj.name == "quilladin" ){
+  pokeBio.innerHTML = pokeBios.bioQuilladin;
+}
+if (myObj.name == "lucario" ){
+  pokeBio.innerHTML = pokeBios.bioLucario;
+}
+if (myObj.name == "metagross" ){
+  pokeBio.innerHTML = pokeBios.bioMetagross;
+}
+if (myObj.name == "magnezone" ){
+  pokeBio.innerHTML = pokeBios.bioMagnezone;
+}
+
+
+
+}
+
 function loadImage(pokemon) {
 var pokemonImage = document.getElementById("pokemonImage");
 pokemonImage.src = "images/" + pokemon + ".png";
@@ -72,6 +121,7 @@ function loadPokemon(pokemon) {
         //   responsiveVoice.speak(document.getElementById("abilityBox").innerHTML);
   // }
   loadImage(pokemon);
+getBio(pokemon);
         }
   };
   xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/" + pokemon, true);
