@@ -161,3 +161,21 @@ html {
   box-shadow: 5px 5px black;
   font-weight: bold;
 }
+
+@media screen and (min-width: 200px) and (max-width: 899px) {
+  .personalStory {
+display: none;
+  }
+
+  #personalStory {
+display: none;
+  }
+
+  .teamStory {
+display: none;
+  }
+
+  #teamStory {
+  display: none;
+  }
+}
