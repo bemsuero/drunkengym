@@ -105,7 +105,7 @@ function loadPokemon(pokemon) {
       // document.getElementById("pokeType2").innerHTML = myObj.types[1].type.name;
       document.getElementById("atk").innerHTML = myObj.stats[4].base_stat;
       document.getElementById("def").innerHTML = myObj.stats[3].base_stat;
-      document.getElementById("hp").innerHTML = "This pokemon's HP is " + myObj.stats[5].base_stat
+      document.getElementById("hp").innerHTML = myObj.stats[5].base_stat
 
       // if (myObj.types[0].slot == 2) {
       // document.getElementById("pokeType2").innerHTML = myObj.types[1].type.name;

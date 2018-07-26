@@ -1,171 +1,164 @@
-body {
-	background: url('images/steelBackground.jpg');
-}
-
-h1 {
-	text-align: center;
-	color: white;
-	text-shadow: 4px 4px 10px black;
-}
-
-#trainerName{
-	font-size: 50px;
-}
-
-.container {
-	width:95%;
-	margin:auto;
-}
-
-.invisible {
-	display: none;
-}
-
-.pokeball-horizontal {
-	display: none;
-	width: ;
-}
-
-.grid-horizontal {
-	display: grid;
-  	grid-template-columns: auto auto auto;
-  	width: 80%;
-  	position: fixed;
-  	bottom: 8%;
-  	left: -30%;
-  	}
-
-.pokeball-horizontal img {
-	width: 50%;
-}
-
-.grid-vertical img {
-	width: 25%;
-	margin-top: 10%;
-}
-
-.grid-vertical {
-	display: grid;
-	grid-auto-columns: auto;
-	max-width: 30%;
-  	margin-top: 9%;
-}
-
-.pokeball, .pokeball-horizontal {
-  	animation: MoveUpDown 1s linear infinite;
- 	position: relative;
- 	left: 68%;
-}
-
-.pokeball img {
-	cursor: pointer;
-}
-
-@keyframes MoveUpDown {
-  0%, 100% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 3px;
-  }
-}
-
-.grid-pokemon {
-	display: grid;
-	grid-template-columns: auto auto;
-	grid-gap: 30px;
-	width: 65%;
-	position: relative;
-	left: 32%;
-	bottom: 650px;
-}
-
-#pokemon {
-	width: 100%;
-	bottom: 50px;
-}
-
-.box {
-  width: 575px;
-  height: 575px;
-  background-color: rgba(255, 255, 255, 0.4);
-  overflow-wrap: break-word;
-  padding: 12px;
-  margin-top: 80px;
-  text-align: center;
-}
-
-.trainer {
-  position: absolute;
-  bottom: 3%;
-  left: 0px;
-  width: 25%;
-}
-
-#pokemon-bio {
-	font-size: 30px;
-}
-
-.fas {
-	font-size: 40px;
-}
-
-.stats {
-	font-size: 40px;
-}
-
-.fa-heartbeat {
-	color: #EA2027;
-}
-
-.fa-shield-alt {
-	color: #FFC312;
-}
-
-.fa-hand-rock {
-	color: #EE5A24;
-}
-
-@media screen and (max-width: 376px) {
-	.pokeball {
-		display: none;
+	body {
+	  background: url('images/steelBackground.jpg');
 	}
-	.pokeball-horizontal {
-		display: block;
-	}
-	.grid-pokemon {
-		grid-template-columns: auto;
-		grid-template-rows: auto auto;
-		grid-gap: 1px;
-		left: 1%;
-		margin: 0 auto;
-		bottom: 0;
-	}
-	.box {
-  		width: 250px;
-  		height: 250px;
-  		margin-left: -19px;
-	 	margin-top: 5px;
+
+	h1 {
+	  text-align: center;
+	  color: white;
+	  text-shadow: 4px 4px 10px black;
 	}
 
 	#trainerName {
-		font-size: 40px;
+	  font-size: 50px;
 	}
 
-	.fas {
-		font-size: 20px;
+	.container {
+	  width: 95%;
+	  margin: auto;
 	}
 
-	.stats {
-		font-size: 20px;
+	.invisible {
+	  display: none;
+	}
+
+	.pokeball-horizontal {
+	  display: none;
+	  width: ;
+	}
+
+	.grid-horizontal {
+	  display: grid;
+	  grid-template-columns: auto auto auto;
+	  width: 80%;
+	  position: fixed;
+	  bottom: 8%;
+	  left: -30%;
+	}
+
+	.pokeball-horizontal img {
+	  width: 50%;
+	}
+
+	.grid-vertical img {
+	  width: 25%;
+	  margin-top: 10%;
+	}
+
+	.grid-vertical {
+	  display: grid;
+	  grid-auto-columns: auto;
+	  max-width: 30%;
+	  margin-top: 9%;
+	}
+
+	.pokeball, .pokeball-horizontal {
+	  animation: MoveUpDown 1s linear infinite;
+	  position: relative;
+	  left: 68%;
+	}
+
+	.pokeball img {
+	  cursor: pointer;
+	}
+
+	@keyframes MoveUpDown {
+	  0%, 100% {
+	    bottom: 0;
+	  }
+	  50% {
+	    bottom: 3px;
+	  }
+	}
+
+	.grid-pokemon {
+	  display: grid;
+	  grid-template-columns: auto auto;
+	  grid-gap: 30px;
+	  width: 65%;
+	  position: relative;
+	  left: 32%;
+	  bottom: 500px;
+	}
+
+	#pokemonImage {
+	  width: 100%;
+	}
+
+	.box {
+	  width: 475px;
+	  height: 475px;
+	  background-color: rgba(255, 255, 255, 0.8);
+	  overflow-wrap: break-word;
+	  padding: 12px;
+	  text-align: center;
+	}
+
+	.trainer {
+	  position: absolute;
+	  bottom: 3%;
+	  left: 0px;
+	  width: 25%;
 	}
 
 	#pokemon-bio {
-		font-size: 16px;
+	  font-size: 20px;
 	}
 
-	#pokemon {
-		margin-left: 10%;
-		width: 65%;
+	.fas {
+	  font-size: 40px;
 	}
-}
+
+	.stats {
+	  font-size: 30px;
+	}
+
+	.fa-heartbeat {
+	  color: #EA2027;
+	}
+
+	.fa-shield-alt {
+	  color: #FFC312;
+	}
+
+	.fa-hand-rock {
+	  color: #EE5A24;
+	}
+
+	@media screen and (max-width: 376px) {
+	  .pokeball {
+	    display: none;
+	  }
+	  .pokeball-horizontal {
+	    display: block;
+	  }
+	  .grid-pokemon {
+	    grid-template-columns: auto;
+	    grid-template-rows: auto auto;
+	    grid-gap: 1px;
+	    left: 1%;
+	    margin: 0 auto;
+	    bottom: 0;
+	  }
+	  .box {
+	    width: 250px;
+	    height: 250px;
+	    margin-left: -19px;
+	    margin-top: 5px;
+	  }
+	  #trainerName {
+	    font-size: 40px;
+	  }
+	  .fas {
+	    font-size: 20px;
+	  }
+	  .stats {
+	    font-size: 20px;
+	  }
+	  #pokemon-bio {
+	    font-size: 16px;
+	  }
+	  #pokemon {
+	    margin-left: 10%;
+	    width: 65%;
+	  }
+	}
